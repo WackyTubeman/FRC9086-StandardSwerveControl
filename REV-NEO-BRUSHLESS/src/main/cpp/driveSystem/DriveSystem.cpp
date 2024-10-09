@@ -83,7 +83,7 @@ void DriveSystem::driveXbox(int id) {
 
 	// Swerve control
 	steeringAngle = atan2(x1Input, y1Input);
-	if (x1Input > 0) {
+	if (x1Input < 0) {
 		steeringAngle = (2 * M_PI) + steeringAngle;
 	}
 
